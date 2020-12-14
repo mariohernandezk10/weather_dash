@@ -1,0 +1,16 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+html {
+    font-family: 'East Sea Dokdo', cursive;
+}
+
+.dashboard {
+    background: rgb(216, 132, 132);
+    text-align: center;
+    padding: 1rem;
+}
+
