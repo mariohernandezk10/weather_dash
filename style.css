@@ -14,3 +14,69 @@ html {
     padding: 1rem;
 }
 
+.search {
+    padding-left: 0.5rem;
+    width: 18%;
+    /* border: 2px black solid; */
+}
+
+.list-cities {
+    margin-left: 0.5rem;
+    /* border: black solid 2px; */
+    height: 50vh;
+    width: 30vh;
+    margin-top: 1rem;
+}
+
+.city-container {
+    border: solid black 2px;
+}
+
+.current-container {
+    position: absolute;
+    margin: -29rem 0rem 0rem 20rem;
+    border: solid black 2px;
+    width: 60%;
+    padding-left: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.current-city div {
+    margin-bottom: .8rem;
+}
+
+.current-city h1 {
+    margin-bottom: .8rem;
+}
+
+.forecast-container {
+    margin-top: 1rem;
+    border: black solid 2px;
+}
+
+.forecast-heading {
+    display: block;
+    text-align: center;
+}
+
+.card-container {
+    /* border: black solid 2px; */
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    height: 25vh;
+}
+
+.forecast-day-container {
+    border: black solid 2px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 0.5rem;
+}
+
+.forecast-day-container div {
+    /* border: black solid 2px; */
+    width: 100%;
+}
