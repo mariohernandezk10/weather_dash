@@ -2,7 +2,8 @@ let newCity;
 
 const apiKey = "11ae01be28641011b4eebb3bef71dd40"
 const queryUrl = `http://api.openweathermap.org/data/2.5/weather?q=${newCity}&APPID=${apiKey}`
-const cities = [];
+
+const cities = JSON.parse(localStorage.getItem("Cities")) || []
 
 
 // Event listeners
