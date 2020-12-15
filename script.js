@@ -1,24 +1,44 @@
-// const url = `http://api.openweathermap.org/data/2.5/weather?q=austin&appid=${apiKey}&units=imperial`
-// const apiKey = "2884ab08c87940d88552c26af1acf021"
-let city;
+const apiKey = "11ae01be28641011b4eebb3bef71dd40"
+
+const cities = [];
+
+
+
 
 
 
 function setlocalStorage () {
 
-    localStorage.setItem("City", city);
+    localStorage.setItem("Cities", JSON.stringify(cities));
+    console.log(cities);
+
 }
 
 function getLocalStorage () {
-    localStorage.getItem("City");
+    localStorage.getItem("Cities");
 }
 
+function weatherCall() {
+    const queryUrl = `http://api.openweathermap.org/data/2.5/weather?q=austin&APPID=${apiKey}`
+// weather API
+$.ajax({
+    url: queryUrl,
+    method: "GET"
+}).then(function(response) {
+    console.log(response);
 
+    // // UVI API => pass coordinates from weather API to UVI API
+    // $.ajax({}).then(function(response){
 
+    // });
 
+    // // 5 day forcast 
+    // $.ajax({}).then(function(response){
 
-
-
+    // });
+});
+};
+weatherCall();
 
 
 
@@ -30,12 +50,11 @@ function getLocalStorage () {
 
 // create divs for the past search
 function listPastSearch() {
-    if (localStorage.getItem("City") !== "string" || localStorage.getItem("City") === "") {
-        console.log("Need to put something");
-    } else {
-        console.log("so far so good");
-    }
+    for (let i = 0; i < 10; i++) {}
+    div = document.createElement("div");
+    div.appendChild();
 }
+
 
 
 
@@ -48,7 +67,8 @@ function listPastSearch() {
 // Event listeners
 
 document.getElementById("search").addEventListener("click", function() {
-    city = document.getElementById("search-city").value;
+    let newCity = document.getElementById("search-city").value;
+    cities.push(newCity);
     // console.log(city);
     setlocalStorage();
 });
