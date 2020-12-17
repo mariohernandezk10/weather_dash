@@ -131,22 +131,29 @@ function weatherCall(newCity) {
 
 // --------------------------------------------------------------------
             
-            let day1Unix = response.list[4].dt;
-            convertAndAddUnixtoDay1(day1Unix);
+            // let day1Unix = response.list[2].dt;
+            // convertAndAddUnixtoDay1(day1Unix);
 
-            let day2Unix = response.list[13].dt;
-            let day3Unix = response.list[21].dt;
-            let day4Unix = response.list[28].dt;
-            let day5Unix = response.list[35].dt;
+            // let day2Unix = response.list[13].dt;
+            // convertAndAddUnixtoDay1(day2Unix);
+
+            // let day3Unix = response.list[21].dt;
+            // let day4Unix = response.list[28].dt;
+            // let day5Unix = response.list[35].dt;
 
         });
     });
 };
 
-function convertAndAddUnixtoDay1(day1Unix) {
-    let one = moment(day1Unix)._d;
-    console.log(one);
-}
+// function convertAndAddUnixtoDay1(day1Unix) {
+//     let two = moment(day1Unix).format("dddd");
+//     console.log(two);
+// }
+
+// function convertAndAddUnixtoDay1(day2Unix) {
+//     let three = moment(day2Unix).format("dddd");
+//     console.log(three);
+// }
 
 function addsToDay1(temp1, humidity1) {
     $("#t-1").text(temp1);
