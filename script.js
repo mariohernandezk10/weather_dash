@@ -30,17 +30,11 @@ document.getElementById("search").addEventListener("click", function () {
 });
 
 
-function setlocalStorage() {
-
-    localStorage.setItem("Cities", JSON.stringify(cities));
-    // console.log(cities);
-
-}
-
 $(document).on('click', '.cityClick', function () {
     let city = $(this).val();
     // console.log(city)
     weatherCall(city);
+
 })
 
 
@@ -130,7 +124,8 @@ function weatherCall(newCity) {
             addsToDay5(temp5, humidity5);
 
 // --------------------------------------------------------------------
-            
+            $("#current-city-text").text(newCity);
+
             // let day1Unix = response.list[2].dt;
             // convertAndAddUnixtoDay1(day1Unix);
 
@@ -140,6 +135,8 @@ function weatherCall(newCity) {
             // let day3Unix = response.list[21].dt;
             // let day4Unix = response.list[28].dt;
             // let day5Unix = response.list[35].dt;
+
+
 
         });
     });
@@ -190,11 +187,16 @@ function addsToMain(temp, windSpeed, humidity, index) {
     $("#wind span").text(windSpeed);
     $("#index span").text(index);
 
-    // console.log(temp);
 }
 
 
 
 function getLocalStorage() {
     console.log(localStorage.getItem("Cities"));
+}
+
+function setlocalStorage() {
+
+    localStorage.setItem("Cities", JSON.stringify(cities));
+    // console.log(cities);
 }
