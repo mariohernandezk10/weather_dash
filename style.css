@@ -6,10 +6,12 @@
 
 html {
     font-family: 'East Sea Dokdo', cursive;
+    font-size: 62.5%;
+    background-image: linear-gradient(135deg, rgb(255, 255, 107), skyblue);
 }
 
 .dashboard {
-    background: rgb(216, 132, 132);
+    background: rgb(252, 88, 88);
     text-align: center;
     padding: 1rem;
 }
@@ -80,3 +82,15 @@ html {
     /* border: black solid 2px; */
     width: 100%;
 }
+
+@media only screen and (max-width: 1920px) {
+    html {
+      font-size: 1.2rem;
+    }
+    .dashboard {
+        margin-bottom: 1rem;
+    }
+    .card-container {
+        margin-bottom: 1rem;
+    }
+  }
