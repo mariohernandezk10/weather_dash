@@ -85,12 +85,15 @@ html {
 
 @media only screen and (max-width: 1920px) {
     html {
-      font-size: 1.2rem;
+        font-size: 1.2rem;
     }
+
     .dashboard {
         margin-bottom: 1rem;
     }
+
     .card-container {
         margin-bottom: 1rem;
     }
-  }
+}
+
