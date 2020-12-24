@@ -9,7 +9,7 @@ city you want and click the search button.
 Deploy app: https://mariohernandezk10.github.io/weather_dash/
 
 Screenshot:
-![alt text](/Users/Hernandez/Desktop/Homework/weather_dash/img/SS.png)
+![alt text](img/SS.png)
 ​
 ## Table of Contents 
 ​
