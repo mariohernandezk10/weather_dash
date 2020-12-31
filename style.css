@@ -36,7 +36,7 @@ html {
 
 .current-container {
     position: absolute;
-    margin: -29rem 0rem 0rem 20rem;
+    margin: -15rem 0rem 0rem 15rem;
     border: solid black 2px;
     width: 60%;
     padding-left: 0.5rem;
@@ -85,7 +85,7 @@ html {
 
 @media only screen and (max-width: 1920px) {
     html {
-        font-size: 1.2rem;
+        font-size: 1.8rem;
     }
 
     .dashboard {
@@ -97,3 +97,14 @@ html {
     }
 }
 
+@media only screen and (max-width: 1250px) {
+    html {
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    html {
+        font-size: 1rem;
+    }
+}
